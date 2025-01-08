@@ -22,7 +22,12 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
+  host: localhost
+  port: 5432
   database: nba_star_shopper_development
+  username: nolanb
+  password: none
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
